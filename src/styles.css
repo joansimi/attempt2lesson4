@@ -6,7 +6,7 @@ body {
     color: #212529;
     text-align: left;
     background-color: #fff;
-  }
+   }
   .container {
     max-width: 540px;
     width: 100%;
@@ -15,13 +15,14 @@ body {
     margin-right: auto;
     margin-left: auto;
     font-family: arial, sans-serif;
-  }
+   }
   .weather-app {
     border: 1px solid #dadde1;
     padding: 15px;
     margin: 20px auto;
     border-radius: 10px;
     max-width: 600px;
+    background-color: #e1e1fa;
   }
   form {
     display: block;
@@ -45,7 +46,6 @@ body {
     border-radius: 0.25rem;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   }
-  
   .row {
     display: flex;
     flex-wrap: wrap;
@@ -63,12 +63,23 @@ body {
     flex: 0 0 25%;
     flex-grow: 0;
     flex-shrink: 0;
-    flex-basis: 25%;
-    max-width: 25%;
+    flex-basis: 50%;
+    max-width: 100%;
+    cursor: pointer;
+  }
+  .btn-primary{
+    width: 100%;
+  }
+  .locationBtn {
+    flex: 0 0 25%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 50%;
+    max-width: 100%;
     cursor: pointer;
   }
   h1 {
-    color: #7c7c7c;
+    color: #0e0e4d;
     font-size: 24px;
     font-weight: 100;
     line-height: 28px;
@@ -76,11 +87,17 @@ body {
   }
   ul {
     margin: 0 0 10px;
-    padding: 0;
     list-style: none;
+    padding: 0;
+      
+  }
+  .dayDescription{
+    padding: 0;
+
   }
   .dayTime {
-    color: #7c7c7c;
+    color: #0e0e4d;
+    opacity: 0.5;
     font-size: 16px;
     font-weight: 100;
     height: 19px;
@@ -89,23 +106,34 @@ body {
   }
   .temp {
     font-size: 64px;
+    color: #0e0e4d;
   }
   .units {
     position: relative;
     top: -34px;
+    
+  }
+  #celsius-link{
+    text-decoration: none;
+  }
+  #fahrenheit-link{
+    text-decoration: none;
   }
   .col-6 {
     flex: 0 0 50%;
     max-width: 50%;
   }
   .measurements {
-    color: #7c7c7c;
+    color: #0e0e4d;
+    opacity: 0.5;
     font-size: 16px;
     font-weight: 100;
     height: 19px;
     line-height: 1;
+    list-style: none;
   }
-  .footnote{
-    text-align: center;
+  p{
+    max-width: 600px;
+    margin: 20px auto;
   }
   

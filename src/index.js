@@ -37,9 +37,10 @@ function displayWeather(response) {
   document.querySelector(".humidity").innerHTML = response.data.main.humidity;
   document.querySelector(".wind").innerHTML = response.data.wind.speed;
   celsiustemperature=Math.round(
-    response.data.main.temp)
+    response.data.main.temp);
     let iconelement=document.querySelector("#icon-image");
-    iconelement.setAttribute("src", "https://openweathermap.org/img/wn/"+response.data.weather[0].icon+"@2x.png")
+    iconelement.setAttribute("src", "https://openweathermap.org/img/wn/"+response.data.weather[0].icon+"@2x.png");
+   
 }
 
 function weatherExtract(weather) {
@@ -93,6 +94,6 @@ function converttocelsius(event){
 }
 
 let celsiusElement= document.querySelector("#celsius-link");
-celsiusElement.addEventListener("click", converttocelsius)
+celsiusElement.addEventListener("click", converttocelsius);
 
 
